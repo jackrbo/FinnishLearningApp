@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B9567612747C42A00293F04 /* FinnnishLearningAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567602747C42A00293F04 /* FinnnishLearningAppApp.swift */; };
+		0B9567632747C42A00293F04 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567622747C42A00293F04 /* MainView.swift */; };
+		0B9567652747C43300293F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9567642747C43300293F04 /* Assets.xcassets */; };
+		0B9567682747C43300293F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9567672747C43300293F04 /* Preview Assets.xcassets */; };
+		0B9567722747C43400293F04 /* FinnnishLearningAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567712747C43400293F04 /* FinnnishLearningAppTests.swift */; };
+		0B95677C2747C43400293F04 /* FinnnishLearningAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95677B2747C43400293F04 /* FinnnishLearningAppUITests.swift */; };
+		0B95677E2747C43400293F04 /* FinnnishLearningAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95677D2747C43400293F04 /* FinnnishLearningAppUITestsLaunchTests.swift */; };
+		0B95678B2747C4AE00293F04 /* WordDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95678A2747C4AE00293F04 /* WordDescription.swift */; };
+		0B95678D2747C4DB00293F04 /* WordEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95678C2747C4DB00293F04 /* WordEditor.swift */; };
+		0B9567912747CEC400293F04 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567902747CEC400293F04 /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B95676E2747C43400293F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9567552747C42A00293F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B95675C2747C42A00293F04;
+			remoteInfo = FinnnishLearningApp;
+		};
+		0B9567782747C43400293F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9567552747C42A00293F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B95675C2747C42A00293F04;
+			remoteInfo = FinnnishLearningApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B95675D2747C42A00293F04 /* FinnnishLearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinnnishLearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9567602747C42A00293F04 /* FinnnishLearningAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnnishLearningAppApp.swift; sourceTree = "<group>"; };
+		0B9567622747C42A00293F04 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0B9567642747C43300293F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B9567672747C43300293F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B95676D2747C43400293F04 /* FinnnishLearningAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinnnishLearningAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9567712747C43400293F04 /* FinnnishLearningAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnnishLearningAppTests.swift; sourceTree = "<group>"; };
+		0B9567772747C43400293F04 /* FinnnishLearningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinnnishLearningAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B95677B2747C43400293F04 /* FinnnishLearningAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnnishLearningAppUITests.swift; sourceTree = "<group>"; };
+		0B95677D2747C43400293F04 /* FinnnishLearningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnnishLearningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B95678A2747C4AE00293F04 /* WordDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDescription.swift; sourceTree = "<group>"; };
+		0B95678C2747C4DB00293F04 /* WordEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditor.swift; sourceTree = "<group>"; };
+		0B9567902747CEC400293F04 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B95675A2747C42A00293F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B95676A2747C43400293F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9567742747C43400293F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B9567542747C42A00293F04 = {
+			isa = PBXGroup;
+			children = (
+				0B95675F2747C42A00293F04 /* FinnnishLearningApp */,
+				0B9567702747C43400293F04 /* FinnnishLearningAppTests */,
+				0B95677A2747C43400293F04 /* FinnnishLearningAppUITests */,
+				0B95675E2747C42A00293F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B95675E2747C42A00293F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B95675D2747C42A00293F04 /* FinnnishLearningApp.app */,
+				0B95676D2747C43400293F04 /* FinnnishLearningAppTests.xctest */,
+				0B9567772747C43400293F04 /* FinnnishLearningAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B95675F2747C42A00293F04 /* FinnnishLearningApp */ = {
+			isa = PBXGroup;
+			children = (
+				0B95678F2747CEA800293F04 /* Models */,
+				0B9567602747C42A00293F04 /* FinnnishLearningAppApp.swift */,
+				0B9567622747C42A00293F04 /* MainView.swift */,
+				0B9567642747C43300293F04 /* Assets.xcassets */,
+				0B9567662747C43300293F04 /* Preview Content */,
+				0B95678E2747C4FF00293F04 /* WordViews */,
+			);
+			path = FinnnishLearningApp;
+			sourceTree = "<group>";
+		};
+		0B9567662747C43300293F04 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0B9567672747C43300293F04 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B9567702747C43400293F04 /* FinnnishLearningAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B9567712747C43400293F04 /* FinnnishLearningAppTests.swift */,
+			);
+			path = FinnnishLearningAppTests;
+			sourceTree = "<group>";
+		};
+		0B95677A2747C43400293F04 /* FinnnishLearningAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B95677B2747C43400293F04 /* FinnnishLearningAppUITests.swift */,
+				0B95677D2747C43400293F04 /* FinnnishLearningAppUITestsLaunchTests.swift */,
+			);
+			path = FinnnishLearningAppUITests;
+			sourceTree = "<group>";
+		};
+		0B95678E2747C4FF00293F04 /* WordViews */ = {
+			isa = PBXGroup;
+			children = (
+				0B95678C2747C4DB00293F04 /* WordEditor.swift */,
+				0B95678A2747C4AE00293F04 /* WordDescription.swift */,
+			);
+			path = WordViews;
+			sourceTree = "<group>";
+		};
+		0B95678F2747CEA800293F04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B9567902747CEC400293F04 /* ViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B95675C2747C42A00293F04 /* FinnnishLearningApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9567812747C43400293F04 /* Build configuration list for PBXNativeTarget "FinnnishLearningApp" */;
+			buildPhases = (
+				0B9567592747C42A00293F04 /* Sources */,
+				0B95675A2747C42A00293F04 /* Frameworks */,
+				0B95675B2747C42A00293F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinnnishLearningApp;
+			productName = FinnnishLearningApp;
+			productReference = 0B95675D2747C42A00293F04 /* FinnnishLearningApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B95676C2747C43400293F04 /* FinnnishLearningAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9567842747C43400293F04 /* Build configuration list for PBXNativeTarget "FinnnishLearningAppTests" */;
+			buildPhases = (
+				0B9567692747C43400293F04 /* Sources */,
+				0B95676A2747C43400293F04 /* Frameworks */,
+				0B95676B2747C43400293F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B95676F2747C43400293F04 /* PBXTargetDependency */,
+			);
+			name = FinnnishLearningAppTests;
+			productName = FinnnishLearningAppTests;
+			productReference = 0B95676D2747C43400293F04 /* FinnnishLearningAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B9567762747C43400293F04 /* FinnnishLearningAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9567872747C43400293F04 /* Build configuration list for PBXNativeTarget "FinnnishLearningAppUITests" */;
+			buildPhases = (
+				0B9567732747C43400293F04 /* Sources */,
+				0B9567742747C43400293F04 /* Frameworks */,
+				0B9567752747C43400293F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B9567792747C43400293F04 /* PBXTargetDependency */,
+			);
+			name = FinnnishLearningAppUITests;
+			productName = FinnnishLearningAppUITests;
+			productReference = 0B9567772747C43400293F04 /* FinnnishLearningAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B9567552747C42A00293F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0B95675C2747C42A00293F04 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0B95676C2747C43400293F04 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0B95675C2747C42A00293F04;
+					};
+					0B9567762747C43400293F04 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0B95675C2747C42A00293F04;
+					};
+				};
+			};
+			buildConfigurationList = 0B9567582747C42A00293F04 /* Build configuration list for PBXProject "FinnnishLearningApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B9567542747C42A00293F04;
+			productRefGroup = 0B95675E2747C42A00293F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B95675C2747C42A00293F04 /* FinnnishLearningApp */,
+				0B95676C2747C43400293F04 /* FinnnishLearningAppTests */,
+				0B9567762747C43400293F04 /* FinnnishLearningAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B95675B2747C42A00293F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9567682747C43300293F04 /* Preview Assets.xcassets in Resources */,
+				0B9567652747C43300293F04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B95676B2747C43400293F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9567752747C43400293F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B9567592747C42A00293F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B95678B2747C4AE00293F04 /* WordDescription.swift in Sources */,
+				0B9567632747C42A00293F04 /* MainView.swift in Sources */,
+				0B9567912747CEC400293F04 /* ViewModel.swift in Sources */,
+				0B95678D2747C4DB00293F04 /* WordEditor.swift in Sources */,
+				0B9567612747C42A00293F04 /* FinnnishLearningAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9567692747C43400293F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9567722747C43400293F04 /* FinnnishLearningAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9567732747C43400293F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B95677C2747C43400293F04 /* FinnnishLearningAppUITests.swift in Sources */,
+				0B95677E2747C43400293F04 /* FinnnishLearningAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B95676F2747C43400293F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B95675C2747C42A00293F04 /* FinnnishLearningApp */;
+			targetProxy = 0B95676E2747C43400293F04 /* PBXContainerItemProxy */;
+		};
+		0B9567792747C43400293F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B95675C2747C42A00293F04 /* FinnnishLearningApp */;
+			targetProxy = 0B9567782747C43400293F04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B95677F2747C43400293F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B9567802747C43400293F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B9567822747C43400293F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinnnishLearningApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0B9567832747C43400293F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinnnishLearningApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0B9567852747C43400293F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinnnishLearningApp.app/FinnnishLearningApp";
+			};
+			name = Debug;
+		};
+		0B9567862747C43400293F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinnnishLearningApp.app/FinnnishLearningApp";
+			};
+			name = Release;
+		};
+		0B9567882747C43400293F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinnnishLearningApp;
+			};
+			name = Debug;
+		};
+		0B9567892747C43400293F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinnnishLearningApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B9567582747C42A00293F04 /* Build configuration list for PBXProject "FinnnishLearningApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B95677F2747C43400293F04 /* Debug */,
+				0B9567802747C43400293F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9567812747C43400293F04 /* Build configuration list for PBXNativeTarget "FinnnishLearningApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9567822747C43400293F04 /* Debug */,
+				0B9567832747C43400293F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9567842747C43400293F04 /* Build configuration list for PBXNativeTarget "FinnnishLearningAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9567852747C43400293F04 /* Debug */,
+				0B9567862747C43400293F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9567872747C43400293F04 /* Build configuration list for PBXNativeTarget "FinnnishLearningAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9567882747C43400293F04 /* Debug */,
+				0B9567892747C43400293F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B9567552747C42A00293F04 /* Project object */;
+}
