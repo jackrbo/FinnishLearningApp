@@ -22,13 +22,17 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack {
+                SearchBar(text: $newWord)
+                    .padding()
                 List {
+                    
                     Section(header: Text(viewModel.newWordHeader)) {
-                        HStack {
-                            TextField(viewModel.addNewWordText, text: $newWord)
-                                .padding()
-                                .disableAutocorrection(true)
-                        }
+                        
+//                        HStack {
+//                            TextField(viewModel.addNewWordText, text: $newWord)
+//                                .padding()
+//                                .disableAutocorrection(true)
+//                        }
                         HStack {
                             Button(action: {
                                 addNewWord()
@@ -60,7 +64,9 @@ struct MainView: View {
                         }
                     }
                     
-                    ForEach(words, id: \.self) { word in
+                    ForEach(words.filter {
+                        self.newWord.isEmpty ? true: $0.lowercased().prefix(newWord.count).contains(newWord.lowercased())
+                    }, id: \.self) { word in
                         NavigationLink(destination: WordDescription(word: word, viewModel: viewModel)) {
                                 Text(word)
                             }

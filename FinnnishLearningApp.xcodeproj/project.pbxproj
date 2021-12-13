@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B9567612747C42A00293F04 /* FinnnishLearningAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567602747C42A00293F04 /* FinnnishLearningAppApp.swift */; };
+		0B9567612747C42A00293F04 /* FinnishLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567602747C42A00293F04 /* FinnishLearningApp.swift */; };
 		0B9567632747C42A00293F04 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567622747C42A00293F04 /* MainView.swift */; };
 		0B9567652747C43300293F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9567642747C43300293F04 /* Assets.xcassets */; };
 		0B9567682747C43300293F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9567672747C43300293F04 /* Preview Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		0B95678B2747C4AE00293F04 /* WordDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95678A2747C4AE00293F04 /* WordDescription.swift */; };
 		0B95678D2747C4DB00293F04 /* WordEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95678C2747C4DB00293F04 /* WordEditor.swift */; };
 		0B9567912747CEC400293F04 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9567902747CEC400293F04 /* ViewModel.swift */; };
+		0BDB21482767A2B0004C00B4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB21472767A2B0004C00B4 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B95675D2747C42A00293F04 /* FinnnishLearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinnnishLearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B9567602747C42A00293F04 /* FinnnishLearningAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnnishLearningAppApp.swift; sourceTree = "<group>"; };
+		0B95675D2747C42A00293F04 /* FinnishLearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinnishLearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9567602747C42A00293F04 /* FinnishLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinnishLearningApp.swift; sourceTree = "<group>"; };
 		0B9567622747C42A00293F04 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0B9567642747C43300293F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B9567672747C43300293F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		0B95678A2747C4AE00293F04 /* WordDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDescription.swift; sourceTree = "<group>"; };
 		0B95678C2747C4DB00293F04 /* WordEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditor.swift; sourceTree = "<group>"; };
 		0B9567902747CEC400293F04 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0BDB21472767A2B0004C00B4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,7 @@
 		0B95675E2747C42A00293F04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B95675D2747C42A00293F04 /* FinnnishLearningApp.app */,
+				0B95675D2747C42A00293F04 /* FinnishLearningApp.app */,
 				0B95676D2747C43400293F04 /* FinnnishLearningAppTests.xctest */,
 				0B9567772747C43400293F04 /* FinnnishLearningAppUITests.xctest */,
 			);
@@ -101,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				0B95678F2747CEA800293F04 /* Models */,
-				0B9567602747C42A00293F04 /* FinnnishLearningAppApp.swift */,
+				0B9567602747C42A00293F04 /* FinnishLearningApp.swift */,
+				0BDB21472767A2B0004C00B4 /* SearchBar.swift */,
 				0B9567622747C42A00293F04 /* MainView.swift */,
 				0B9567642747C43300293F04 /* Assets.xcassets */,
 				0B9567662747C43300293F04 /* Preview Content */,
@@ -169,7 +172,7 @@
 			);
 			name = FinnnishLearningApp;
 			productName = FinnnishLearningApp;
-			productReference = 0B95675D2747C42A00293F04 /* FinnnishLearningApp.app */;
+			productReference = 0B95675D2747C42A00293F04 /* FinnishLearningApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0B95676C2747C43400293F04 /* FinnnishLearningAppTests */ = {
@@ -286,7 +289,8 @@
 				0B9567632747C42A00293F04 /* MainView.swift in Sources */,
 				0B9567912747CEC400293F04 /* ViewModel.swift in Sources */,
 				0B95678D2747C4DB00293F04 /* WordEditor.swift in Sources */,
-				0B9567612747C42A00293F04 /* FinnnishLearningAppApp.swift in Sources */,
+				0B9567612747C42A00293F04 /* FinnishLearningApp.swift in Sources */,
+				0BDB21482767A2B0004C00B4 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FinnnishLearningApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				DEVELOPMENT_TEAM = 6KALSAFZJC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -460,8 +464,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnishLearningApp";
+				PRODUCT_NAME = FinnishLearningApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -476,7 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FinnnishLearningApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 9FUZ3GG7T7;
+				DEVELOPMENT_TEAM = 6KALSAFZJC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -489,8 +493,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnnishLearningApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.f-secure.jackstuff.FinnishLearningApp";
+				PRODUCT_NAME = FinnishLearningApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
