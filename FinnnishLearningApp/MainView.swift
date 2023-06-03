@@ -9,21 +9,34 @@ import SwiftUI
 
 struct MainView: View {
     @State var isAlertPresented = false
-    @State var words = [String]() {
-        didSet {
-            UserDefaults.standard.set(words, forKey: "Words")
-        }
-    }
     @StateObject var viewModel = ViewModel()
     
     @State private var showingSheet = false
     
-    @State private var newWord = ""
+    
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(text: $newWord)
-                    .padding()
+                Text("Finnish words")
+                    .font(.title)
+                    .bold()
+                HStack {
+                    Button(action: {}) {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                    .padding(.leading)
+                    Spacer()
+                    Button(action: { viewModel.isFinnishWord.toggle()})
+                    {
+                        Text(viewModel.navigationButtonLabel)
+                            .font(.largeTitle)
+                    }
+                    .padding(.trailing)
+                }
+                
+                
+                SearchBar(text: $viewModel.newWord)
+                    .padding(.bottom)
                 List {
                     
                     Section(header: Text(viewModel.newWordHeader)) {
@@ -34,29 +47,17 @@ struct MainView: View {
 //                                .disableAutocorrection(true)
 //                        }
                         HStack {
-                            Button(action: {
-                                addNewWord()
-                            }) {
-                                Text(viewModel.submitText)
-                                    .foregroundColor(.white)
-                                    
+                            SearchButton(name: viewModel.submitText) {
+                            viewModel.addNewWord()
                             }
-                            .buttonStyle(BorderlessButtonStyle())
-                            .frame(maxWidth: .infinity, alignment: .center).padding()
-                            .background(Color.blue).cornerRadius(5)
                             Spacer()
-                            Button(action: {
+                            SearchButton(name: viewModel.searchText) {
                                 if let _ =
-                                    trimNewWord() {                  showingSheet.toggle()
+                                    viewModel.trimNewWord() {                  showingSheet.toggle()
                                 }
-                            }) {
-                                Text(viewModel.searchText)
-                                    .foregroundColor(.white)
                             }
-                            .frame(maxWidth: .infinity, alignment: .center).padding()
-                            .background(Color.blue).cornerRadius(5)
                             .sheet(isPresented: $showingSheet) {
-                                if let trimmedWord = trimNewWord() {
+                                if let trimmedWord = viewModel.trimNewWord() {
                                     WordDescription(word: trimmedWord, viewModel: viewModel)
                                 }
                             }
@@ -64,58 +65,42 @@ struct MainView: View {
                         }
                     }
                     
-                    ForEach(words.filter {
-                        self.newWord.isEmpty ? true: $0.lowercased().prefix(newWord.count).contains(newWord.lowercased())
+                    ForEach(viewModel.words.filter {
+                        viewModel.newWord.isEmpty ? true: $0.lowercased().prefix(viewModel.newWord.count).contains(viewModel.newWord.lowercased())
                     }, id: \.self) { word in
                         NavigationLink(destination: WordDescription(word: word, viewModel: viewModel)) {
                                 Text(word)
                             }
                     }
-                    .onDelete(perform: removeRows)
+                    .onDelete(perform: viewModel.removeRows)
                 }
-                .navigationTitle(Text("Finnish words"))
-                .navigationBarItems(leading: Button(action: { viewModel.isFinnishWord.toggle()})
-                {
-                    Text(viewModel.navigationButtonLabel)
-                        .font(.largeTitle)
-                }
-                )
             }
         }
-        .onSubmit(addNewWord)
-        
+        .onSubmit(viewModel.addNewWord)
         .onAppear(){
             if let savedWords = UserDefaults.standard.stringArray(forKey: "Words") {
-                words = savedWords
+                viewModel.words = savedWords
             }
         }
-        
     }
-    
-    func trimNewWord() -> String? {
-        // lowercase and trim the word, to make sure we don't add duplicate words with case differences
-        let trimmedWord = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+}
 
-        // exit if the remaining string is empty
-        guard trimmedWord.count > 0 else { return nil }
-        
-        return trimmedWord
+struct SearchButton: View {
+    let name: String
+    let action: () -> Void
+   
+    var body: some View {
+        Button(action: {
+            action()
+        }) {
+            Text(name)
+                .foregroundColor(.white)
+            
+        }
+        .buttonStyle(BorderlessButtonStyle())
+        .frame(maxWidth: .infinity, alignment: .center).padding()
+        .background(Color.blue).cornerRadius(5)
     }
-    
-    func addNewWord() {
-        guard let trimmedWord = trimNewWord() else { return }
-
-        // extra validation to come
-
-        words.insert(trimmedWord, at: 0)
-        newWord = ""
-        
-    }
-    
-    func removeRows(at offsets: IndexSet) {
-        words.remove(atOffsets: offsets)
-    }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

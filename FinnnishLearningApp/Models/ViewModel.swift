@@ -11,8 +11,12 @@ import Combine
 
 public final class ViewModel: ObservableObject {
     @Published var isFinnishWord = true
-    
-    
+    @Published var newWord = ""
+    @Published var words = [String]() {
+        didSet {
+            UserDefaults.standard.set(words, forKey: "Words")
+        }
+    }
     
     var newWordHeader : String {
         if isFinnishWord {
@@ -52,5 +56,31 @@ public final class ViewModel: ObservableObject {
         } else {
             return "🇬🇧"
         }
+    }
+    
+    func trimNewWord() -> String? {
+        // lowercase and trim the word, to make sure we don't add duplicate words with case differences
+        let trimmedWord = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+
+        // exit if the remaining string is empty
+        guard trimmedWord.count > 0 else { return nil }
+        
+        return trimmedWord
+    }
+    
+    func addNewWord() {
+        guard let trimmedWord = trimNewWord() else { return }
+
+        // extra validation to come
+        if words.contains(where: { $0 == trimmedWord }) {
+            return
+        }
+        words.insert(trimmedWord, at: 0)
+        newWord = ""
+        
+    }
+    
+    func removeRows(at offsets: IndexSet) {
+        words.remove(atOffsets: offsets)
     }
 }

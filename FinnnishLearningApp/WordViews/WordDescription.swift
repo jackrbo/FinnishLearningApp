@@ -33,6 +33,7 @@ struct WordDescription: View {
     let viewModel: ViewModel
     
     let word: String
+    var testCount = 0
     
     private var urlPath = ""
     private var url : URL {
