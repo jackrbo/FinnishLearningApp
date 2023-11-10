@@ -37,31 +37,24 @@ struct WordDescription: View {
     
     private var urlPath = ""
     private var url : URL {
-        if viewModel.isFinnishWord {
-            let urlPath = "/wiki/\(word)#Englanti".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "https://fi.wiktionary.org/wiki/\(word)#Englanti"
-            return  URL(string: "https://fi.wiktionary.org\(urlPath)" ) ?? URL(string: "https://fi.wiktionary.org/wiki")!
-        } else {
-            let urlPath = "/wiki/\(word)#Finnish".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "https://en.wiktionary.org/wiki/\(word)#Finnish"
-            return URL(string: "https://en.wiktionary.org\(urlPath)" ) ?? URL(string: "https://en.wiktionary.org/wiki")!
-        }
+        let urlPath = "\(viewModel.targetLanguage.baseDomain)\(word)\(viewModel.section)".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "\(viewModel.targetLanguage.baseDomain)\(word)\(viewModel.section)"
+        return  URL(string: "https://\(urlPath)") ?? URL(string: "https://fi.wiktionary.org/wiki")!
+        
     }
     
     var body: some View {
-        
-            VStack {
-                Section {
-                    Text(word)
-                }
-                
-                WebView(request: URLRequest(url: url))
-                    .toolbar {
-                        NavigationLink(destination: WordEditor(word: word)) {
-                            Text("Edit")
-                        }
-
-                    }
+        VStack {
+            Section {
+                Text(word)
             }
-        
+            
+            WebView(request: URLRequest(url: url))
+                .toolbar {
+                NavigationLink(destination: WordEditor(word: word)) {
+                    Text("Edit")
+                }
+            }
+        }
     }
 }
 

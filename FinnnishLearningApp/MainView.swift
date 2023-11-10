@@ -26,9 +26,15 @@ struct MainView: View {
                     }
                     .padding(.leading)
                     Spacer()
-                    Button(action: { viewModel.isFinnishWord.toggle()})
+                    Button(action: { viewModel.originLanguage = viewModel.originLanguage.cycle() })
                     {
-                        Text(viewModel.navigationButtonLabel)
+                        Text(viewModel.originLanguage.navigationButtonLabel)
+                            .font(.largeTitle)
+                    }
+                    Image(systemName: "arrow.right")
+                    Button(action: { viewModel.targetLanguage = viewModel.targetLanguage.cycle() })
+                    {
+                        Text(viewModel.targetLanguage.navigationButtonLabel)
                             .font(.largeTitle)
                     }
                     .padding(.trailing)
@@ -39,19 +45,19 @@ struct MainView: View {
                     .padding(.bottom)
                 List {
                     
-                    Section(header: Text(viewModel.newWordHeader)) {
+                    Section(header: Text(viewModel.originLanguage.newWordHeader)) {
                         
 //                        HStack {
-//                            TextField(viewModel.addNewWordText, text: $newWord)
+//                            TextField(viewModel.language.addNewWordText, text: $newWord)
 //                                .padding()
 //                                .disableAutocorrection(true)
 //                        }
                         HStack {
-                            SearchButton(name: viewModel.submitText) {
+                            SearchButton(name: viewModel.originLanguage.submitText) {
                             viewModel.addNewWord()
                             }
                             Spacer()
-                            SearchButton(name: viewModel.searchText) {
+                            SearchButton(name: viewModel.originLanguage.searchText) {
                                 if let _ =
                                     viewModel.trimNewWord() {                  showingSheet.toggle()
                                 }
@@ -66,11 +72,11 @@ struct MainView: View {
                     }
                     
                     ForEach(viewModel.words.filter {
-                        viewModel.newWord.isEmpty ? true: $0.lowercased().prefix(viewModel.newWord.count).contains(viewModel.newWord.lowercased())
+                        viewModel.newWord.isEmpty ? true: $0.word.lowercased().prefix(viewModel.newWord.count).contains(viewModel.newWord.lowercased())
                     }, id: \.self) { word in
-                        NavigationLink(destination: WordDescription(word: word, viewModel: viewModel)) {
-                                Text(word)
-                            }
+                        NavigationLink(destination: WordDescription(word: word.word, viewModel: viewModel)) {
+                            Text(word.word)
+                        }
                     }
                     .onDelete(perform: viewModel.removeRows)
                 }
@@ -78,8 +84,10 @@ struct MainView: View {
         }
         .onSubmit(viewModel.addNewWord)
         .onAppear(){
-            if let savedWords = UserDefaults.standard.stringArray(forKey: "Words") {
-                viewModel.words = savedWords
+            if let savedWords =  UserDefaults.standard.object(forKey: "NewWords") as? Data {
+                if let decodedWords = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedWords) as? [Word] {
+                    viewModel.words = decodedWords
+                    }
             }
         }
     }
